@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/homme"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_tips"
+            android:icon="@drawable/info"
+            android:title="Tips" />
+        <item
+            android:id="@+id/nav_excercise"
+            android:icon="@drawable/yoga"
+            android:title="Excercises In Pregnancy" />
+        <item
+            android:id="@+id/nav_does"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Doe's and Don't" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+
+        </menu>
+    </item>
+
+</menu>

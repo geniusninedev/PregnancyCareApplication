@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nineinfosys.android.pregnancycareapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Generaltips.Tips" />
+        <activity android:name=".home.Introduction" />
+        <activity android:name=".home.PrePregnancy" />
+        <activity android:name=".home.Pregnancy" />
+        <activity android:name=".home.Excercise" />
+        <activity android:name=".home.Clothes" />
+        <activity android:name=".home.Sleep" />
+        <activity android:name=".home.Prepregnancy.PreHealth" />
+        <activity android:name=".home.Prepregnancy.PreCheckUp" />
+        <activity android:name=".home.Prepregnancy.Symtomps" />
+        <activity android:name=".home.Prepregnancy.PreHealthlist"></activity>
+        <activity android:name=".home.Prepregnancy.Implementation"/>
+        <activity android:name=".home.Prepregnancy.FalsePregnancy"/>
+        <activity android:name=".home.Prepregnancy.PregnancyTest"/>
+        <activity android:name=".home.Prepregnancy.Medicine"/>
+    </application>
+
+</manifest>
