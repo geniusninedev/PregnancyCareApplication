@@ -28,11 +28,107 @@
         <activity android:name=".home.Prepregnancy.PreHealth" />
         <activity android:name=".home.Prepregnancy.PreCheckUp" />
         <activity android:name=".home.Prepregnancy.Symtomps" />
-        <activity android:name=".home.Prepregnancy.PreHealthlist"></activity>
-        <activity android:name=".home.Prepregnancy.Implementation"/>
-        <activity android:name=".home.Prepregnancy.FalsePregnancy"/>
-        <activity android:name=".home.Prepregnancy.PregnancyTest"/>
-        <activity android:name=".home.Prepregnancy.Medicine"/>
+        <activity android:name=".home.Prepregnancy.PreHealthlist" />
+        <activity android:name=".home.Prepregnancy.Implementation" />
+        <activity android:name=".home.Prepregnancy.FalsePregnancy" />
+        <activity android:name=".home.Prepregnancy.PregnancyTest" />
+        <activity android:name=".home.Prepregnancy.Medicine" />
+
+        <activity android:name=".Pregnancy.Week_by_Week_Pregnancy"
+            android:label="Week By Week Pregnancy"></activity>
+        <activity android:name=".Pregnancy.Week_five_Pregnancy"
+            android:label="Week By Week Pregnancy"/>
+        <activity android:name=".Pregnancy.Week_nine_Pregnancy"
+            android:label="Week By Week Pregnancy"/>
+        <activity android:name=".Pregnancy.Week_thirteen_Pregnancy"
+            android:label="Week By Week Pregnancy"/>
+
+        <activity android:name=".Pregnancy.Week_seventeen_Pregnancy"
+            android:label="Week By Week Pregnancy"/>
+
+        <activity android:name=".Pregnancy.Week_twentyone_Pregnancy"
+            android:label="Week By Week Pregnancy"/>
+        <activity android:name=".Pregnancy.Week_twentysix_Pregnancy"
+            android:label="Week By Week Pregnancy"/>
+
+        <activity android:name=".Pregnancy.Week_thirtyone_Pregnancy"
+            android:label="Week By Week Pregnancy"/>
+        <activity android:name=".Pregnancy.Week_thirtysix_Pregnancy"
+            android:label="Week By Week Pregnancy"/>
+
+        <activity android:name=".Pregnancy.FirstTrimister"
+            android:label="First Trimister"/>
+
+        <activity android:name=".Pregnancy.SecondTrimister"
+            android:label="Second Trimister"/>
+
+        <activity android:name=".Pregnancy.ThirdTrimister"
+            android:label="Third Trimister"/>
+
+
+
+
+        <activity android:name=".Excersise.ExcersizeActivity"/>
+
+        <activity android:name=".Excersise.TrimsterOne.FirstTrimsterActivity"/>
+
+        <activity android:name=".Excersise.TrimsterOne.StrengthExcercise"/>
+
+        <activity android:name=".Excersise.TrimsterOne.WarmupExcercise"/>
+
+        <activity android:name=".Excersise.TrimsterOne.CardioWorkout"/>
+
+        <activity android:name=".Excersise.TrimsterOne.YogaAndHealth"/>
+
+        <activity android:name=".Excersise.TrimsterTwo.SecondTrimsterActivity"/>
+
+        <activity android:name=".Excersise.TrimsterTwo.StrengthExcerciseSecond"/>
+
+        <activity android:name=".Excersise.TrimsterTwo.YogaAndHealthSecond"/>
+
+        <activity android:name=".Excersise.TrimsterTwo.CardioWorkoutSecond"/>
+
+        <activity android:name=".Excersise.TrimsterTwo.WarmupExcerciseSecond"/>
+
+        <activity android:name=".Excersise.TrimsterThree.ThirdTrimsterActivity"/>
+
+        <activity android:name=".Excersise.TrimsterThree.WarmupExcerciseThird"/>
+
+        <activity android:name=".Excersise.TrimsterThree.StrengthExcerciseThird"/>
+
+        <activity android:name=".Excersise.TrimsterThree.CardioWorkoutThird"/>
+
+        <activity android:name=".Excersise.TrimsterThree.YogaAndHealthThird"/>
+
+        <activity android:name=".Tips.TipsForPregnancy"/>
+
+        <activity android:name=".Tips.GeneralTipsForPregnancy"/>
+
+        <activity android:name=".Tips.TipsForHealthCare"/>
+
+        <activity android:name=".Tips.BabyTips"/>
+
+        <activity android:name=".Tips.HusbandTipsInPregnancy"/>
+
+        <activity android:name=".Tips.MotherTipsInPregnancy"/>
+
+        <activity android:name=".Tips.GeneralTipsForPregnancyIndex"/>
+
+        <activity android:name=".Tips.BabyTipsIndex"/>
+
+        <activity android:name=".Tips.MotherTipsIndex"/>
+
+        <activity android:name=".Tips.HealthCareTipsIndex"/>
+
+        <activity android:name=".Tips.HusbandTipsIndex"/>
+
+
+
+
+
+
+
+
     </application>
 
 </manifest>

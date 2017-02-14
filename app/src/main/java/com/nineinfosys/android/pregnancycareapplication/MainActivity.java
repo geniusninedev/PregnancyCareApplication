@@ -16,7 +16,9 @@ import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.nineinfosys.android.pregnancycareapplication.Excersise.ExcersizeActivity;
 import com.nineinfosys.android.pregnancycareapplication.Generaltips.Tips;
+import com.nineinfosys.android.pregnancycareapplication.Tips.TipsForPregnancy;
 import com.nineinfosys.android.pregnancycareapplication.home.Clothes;
 import com.nineinfosys.android.pregnancycareapplication.home.Excercise;
 import com.nineinfosys.android.pregnancycareapplication.home.Introduction;
@@ -151,9 +153,10 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_tips) {
-            startActivity(new Intent(MainActivity.this,Tips.class));
+            startActivity(new Intent(MainActivity.this,TipsForPregnancy.class));
 
         } else if (id == R.id.nav_excercise) {
+            startActivity(new Intent(MainActivity.this, ExcersizeActivity.class));
 
         } else if (id == R.id.nav_does) {
 
