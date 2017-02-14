@@ -21,7 +21,13 @@
         <activity android:name=".Generaltips.Tips" />
         <activity android:name=".home.Introduction" />
         <activity android:name=".home.PrePregnancy" />
-        <activity android:name=".home.Pregnancy" />
+        <activity android:name=".home.Pregnancy"
+            android:label="Pregnancy Care">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+    </activity>
+            />
         <activity android:name=".home.Excercise" />
         <activity android:name=".home.Clothes" />
         <activity android:name=".home.Sleep" />
