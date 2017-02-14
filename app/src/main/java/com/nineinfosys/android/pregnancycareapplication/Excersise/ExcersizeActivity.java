@@ -1,70 +1,100 @@
 package com.nineinfosys.android.pregnancycareapplication.Excersise;
 
-import android.content.Intent;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+
 
 import com.nineinfosys.android.pregnancycareapplication.Excersise.TrimsterOne.FirstTrimsterActivity;
 import com.nineinfosys.android.pregnancycareapplication.Excersise.TrimsterThree.ThirdTrimsterActivity;
 import com.nineinfosys.android.pregnancycareapplication.Excersise.TrimsterTwo.SecondTrimsterActivity;
 import com.nineinfosys.android.pregnancycareapplication.R;
 
+import java.util.ArrayList;
+import java.util.List;
 
-public class ExcersizeActivity extends AppCompatActivity {
-
-
-    private ListView Trimster;
-
-    String[] listTrimster = new String []{" First Trimster"," Second Trimster "," Third Trimster"};
+public class ExcersizeActivity  extends AppCompatActivity {
+    private TabLayout tabLayout;
+    private ViewPager viewPager;
+   /* private int[] tabIcons = {
+            R.drawable.ic_home_black_48dp,
+            R.drawable.ic_contacts_black_24dp,
+            R.drawable.message,
+            R.drawable.profile,
+            R.drawable.notify,
+    };*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_excersize);
+        setContentView(R.layout.activity_dos_and_dont);
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+      /* toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);*/
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Trimster = (ListView)findViewById(R.id.listTrimsters);
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
 
-        ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this,R.layout.activity_excersize,R.id.textViewtrimster,listTrimster);
-        Trimster.setAdapter(mAdapter);
+        setupViewPager(viewPager);
 
-        Trimster.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position==0){
-                    startActivity(new Intent(ExcersizeActivity.this,FirstTrimsterActivity.class));
-                }
-                if(position==1){
-                    startActivity(new Intent(ExcersizeActivity.this,SecondTrimsterActivity.class));
-                }
-                if(position==2){
-                    startActivity(new Intent(ExcersizeActivity.this,ThirdTrimsterActivity.class));
-                }
-            }
-        });
-
+        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager);
+        //  setupTabIcons();
     }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // app icon in action bar clicked; goto parent activity.
-                this.finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
 
-        }
+  /*  private void setupTabIcons() {
+        tabLayout.getTabAt(0).setIcon(tabIcons[0]);
+        tabLayout.getTabAt(1).setIcon(tabIcons[1]);
+        tabLayout.getTabAt(2).setIcon(tabIcons[2]);
+        tabLayout.getTabAt(3).setIcon(tabIcons[3]);
+        tabLayout.getTabAt(4).setIcon(tabIcons[4]);
+    }
+*/
+
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapterExcer adapter = new ViewPagerAdapterExcer(getSupportFragmentManager());
+        adapter.addFrag(new FirstTrimsterActivity(), "First Trimster");
+        adapter.addFrag(new SecondTrimsterActivity(), "Second Trimster ");
+        adapter.addFrag(new ThirdTrimsterActivity(), " Third Trimster"+
+
+                "" +
+                "");
+        viewPager.setAdapter(adapter);
+    }
+
+
+}
+
+class ViewPagerAdapterExcer extends FragmentPagerAdapter {
+    private final List<Fragment> mFragmentList = new ArrayList<>();
+    private final List<String> mFragmentTitleList = new ArrayList<>();
+
+    public ViewPagerAdapterExcer(FragmentManager manager) {
+        super(manager);
+    }
+
+    @Override
+    public Fragment getItem(int position) {
+        return mFragmentList.get(position);
+    }
+
+    @Override
+    public int getCount() {
+        return mFragmentList.size();
+    }
+
+    public void addFrag(Fragment fragment, String title) {
+        mFragmentList.add(fragment);
+        mFragmentTitleList.add(title);
+    }
+
+    @Override
+    public CharSequence getPageTitle(int position) {
+        return mFragmentTitleList.get(position);
     }
 }
+

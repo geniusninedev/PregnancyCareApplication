@@ -54,7 +54,7 @@ public class Pregnancy extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new WeekByWeek(), "Week ");
-        adapter.addFrag(new TrimisterPregnancy(), " Trmisiter");
+        adapter.addFrag(new TrimisterPregnancy(), " Trimster");
         adapter.addFrag(new MonthlyPregnancy(), " Miscarriage"+
 
                 "" +

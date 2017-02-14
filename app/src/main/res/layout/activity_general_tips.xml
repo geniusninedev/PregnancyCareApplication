@@ -4,27 +4,30 @@
     android:id="@+id/activity_general_tips"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+android:background="@drawable/simple">
 
-    tools:context="com.nineinfosys.android.simpleproject.Tips.GeneralTipsForPregnancy">
 
 
-    <FrameLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
 
-        <LinearLayout
-            android:id="@+id/linearLayout1"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center"
-            android:orientation="vertical" >
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
-            <android.support.v4.view.ViewPager
-                android:id="@+id/viewPager"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent" >
-            </android.support.v4.view.ViewPager>
-        </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
 
-    </FrameLayout>
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" >
+                    </android.support.v4.view.ViewPager>
+                </LinearLayout>
+
+            </FrameLayout>
+
+
 </RelativeLayout>

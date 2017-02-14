@@ -2,9 +2,12 @@ package com.nineinfosys.android.pregnancycareapplication.Excersise.TrimsterOne;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -12,69 +15,52 @@ import android.widget.ListView;
 import com.nineinfosys.android.pregnancycareapplication.R;
 
 
-public class FirstTrimsterActivity extends AppCompatActivity {
+public class FirstTrimsterActivity  extends Fragment {
 
-private ListView listViewExcercise;
-
+    private ListView listViewExcercise;
+    ArrayAdapter<String> adapter;
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_trimster);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_first_trimster, container, false);
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
-        String[] listOfExcercise= new String[]{
+        listViewExcercise=(ListView)view.findViewById(R.id.ListOfExcercise);
+        String[] values = new String[]{
                 "First Trimester Warmup Exercises" ,
                 "First Trimester Strength Workout" ,
                 "First Trimester Cardio Workout",
                 "Yoga And Health"
         };
 
-        listViewExcercise=(ListView)findViewById(R.id.ListOfExcercise);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(FirstTrimsterActivity.this,R.layout.activity_first_trimster,R.id.textViewlistexcercise,listOfExcercise);
-
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), R.layout.list_item, R.id.textViewpre, values);
         listViewExcercise.setAdapter(adapter);
 
         listViewExcercise.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
                 if(position == 0){
-                    startActivity(new Intent(FirstTrimsterActivity.this,WarmupExcercise.class));
+                    startActivity(new Intent(getContext(),WarmupExcercise.class));
                 }
                 if(position == 1){
-                    startActivity(new Intent(FirstTrimsterActivity.this,StrengthExcercise.class));
+                    startActivity(new Intent(getContext(),StrengthExcercise.class));
                 }
 
                 if(position == 2){
-                    startActivity(new Intent(FirstTrimsterActivity.this,CardioWorkout.class));
+                    startActivity(new Intent(getContext(),CardioWorkout.class));
                 }
                 if(position == 3){
-                    startActivity(new Intent(FirstTrimsterActivity.this,YogaAndHealth.class));
+                    startActivity(new Intent(getContext(),YogaAndHealth.class));
                 }
             }
         });
-
+        return view;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // app icon in action bar clicked; goto parent activity.
-                this.finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
 
-        }
-    }
+
 }
+
+
 
 
 

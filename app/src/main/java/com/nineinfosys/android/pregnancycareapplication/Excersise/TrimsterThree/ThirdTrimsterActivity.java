@@ -2,9 +2,12 @@ package com.nineinfosys.android.pregnancycareapplication.Excersise.TrimsterThree
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -16,16 +19,15 @@ import com.nineinfosys.android.pregnancycareapplication.R;
  * Created by Supriya on 13-02-2017.
  */
 
-public class ThirdTrimsterActivity extends AppCompatActivity {
+public class ThirdTrimsterActivity extends Fragment {
+
 
     private ListView listViewExcercise;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_trimster);
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_first_trimster, container, false);
+
 
         String[] listOfExcercise= new String[]{
                 "Third Trimester Warmup Exercises" ,
@@ -34,9 +36,9 @@ public class ThirdTrimsterActivity extends AppCompatActivity {
                 "Yoga And Health"
         };
 
-        listViewExcercise=(ListView)findViewById(R.id.ListOfExcercise);
+        listViewExcercise=(ListView)view.findViewById(R.id.ListOfExcercise);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(ThirdTrimsterActivity.this,R.layout.activity_first_trimster,R.id.textViewlistexcercise,listOfExcercise);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(),R.layout.list_item,R.id.textViewpre,listOfExcercise);
 
         listViewExcercise.setAdapter(adapter);
 
@@ -44,36 +46,22 @@ public class ThirdTrimsterActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position == 0){
-                    startActivity(new Intent(ThirdTrimsterActivity.this,WarmupExcerciseThird.class));
+                    startActivity(new Intent(getContext(),WarmupExcerciseThird.class));
                 }
                 if(position == 1){
-                    startActivity(new Intent(ThirdTrimsterActivity.this,StrengthExcerciseThird.class));
+                    startActivity(new Intent(getContext(),StrengthExcerciseThird.class));
                 }
 
                 if(position == 2){
-                    startActivity(new Intent(ThirdTrimsterActivity.this,CardioWorkoutThird.class));
+                    startActivity(new Intent(getContext(),CardioWorkoutThird.class));
                 }
                 if(position == 3){
-                    startActivity(new Intent(ThirdTrimsterActivity.this,YogaAndHealthThird.class));
+                    startActivity(new Intent(getContext(),YogaAndHealthThird.class));
                 }
             }
         });
 
+        return view;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // app icon in action bar clicked; goto parent activity.
-                this.finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-
-        }
-    }
 }

@@ -31,7 +31,7 @@ public class PrePregnancy extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         //   Chankya=(TextView)findViewById(R.id.textView1);
-        String[] values = new String[] {  " Pre-Pregnancy Health","Pre-Pregnancy Checkup List","Pregnancy Symtomps" ,"Already Pregnant"};
+        String[] values = new String[] {  "Pre-Pregnancy Health","Pre-Pregnancy Checkup List","Pregnancy Symtomps" ,"Already Pregnant"};
 
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,

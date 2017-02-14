@@ -9,7 +9,9 @@
         android:id="@+id/textViewpre"
         android:textSize="10pt"
         android:drawableLeft="@drawable/bullet"
-        android:gravity="center"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
         android:textColor="#000000"
         android:fontFamily="serif"
         android:drawablePadding="8dp"

@@ -2,9 +2,12 @@ package com.nineinfosys.android.pregnancycareapplication.Tips;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -16,7 +19,7 @@ import com.nineinfosys.android.pregnancycareapplication.R;
  * Created by Supriya on 14-02-2017.
  */
 
-public class MotherTipsIndex extends AppCompatActivity {
+public class MotherTipsIndex extends Fragment {
 
     private ListView ListTipsgeneral;
 
@@ -100,43 +103,24 @@ public class MotherTipsIndex extends AppCompatActivity {
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_general_tips_for_pregnancy_index);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.activity_general_tips_for_pregnancy_index, container, false);
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeButtonEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
 
-        ListTipsgeneral = (ListView)findViewById(R.id.generaltipslist);
+        ListTipsgeneral = (ListView)view.findViewById(R.id.generaltipslist);
 
-        ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this,R.layout.activity_general_tips_for_pregnancy_index,R.id.textViewgeneraltips,listofgeneralTips);
+        ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(getActivity(),R.layout.activity_general_tips_for_pregnancy_index,R.id.textViewgeneraltips,listofgeneralTips);
         ListTipsgeneral.setAdapter(mAdapter);
 
         ListTipsgeneral.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent i = new Intent(MotherTipsIndex.this,MotherTipsInPregnancy.class);
+                Intent i = new Intent(getContext(),MotherTipsInPregnancy.class);
                 i.putExtra("key", position);
                 startActivity(i);
             }
         });
-
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                // app icon in action bar clicked; goto parent activity.
-                this.finish();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-
-        }
+return view;
     }
 }
 

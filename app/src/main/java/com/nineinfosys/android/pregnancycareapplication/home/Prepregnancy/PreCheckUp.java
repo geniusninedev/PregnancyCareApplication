@@ -21,7 +21,7 @@ public class PreCheckUp extends AppCompatActivity {
         setContentView(R.layout.activity_pre_healthlist);
 
 
-        List = new String[] {"1 Make an Appointment With Your Doctor. "+
+        List = new String[] {"1.Make an Appointment With Your Doctor. "+
                 "\n"+
                 "\n"+
                 "\n"+

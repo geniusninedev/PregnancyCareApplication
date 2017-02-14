@@ -2,6 +2,7 @@ package com.nineinfosys.android.pregnancycareapplication.home;
 
 import android.app.Fragment;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -25,8 +26,10 @@ WebView introo;
         webSetting.setJavaScriptEnabled(true);
 
         introo.setWebViewClient(new Introduction.WebViewClient());
-        introo.loadUrl("file:///android_asset/intoduction.html");
-getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        introo.loadUrl("file:///android_asset/intro.html");
+        introo.setBackgroundResource(R.drawable.simple);
+        introo.setBackgroundColor(0x00000000);
+    getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     private class WebViewClient extends android.webkit.WebViewClient
     {
@@ -65,6 +68,17 @@ getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
                 return super.onOptionsItemSelected(item);
 
+        }
+    }
+
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        // Checks the orientation of the screen
+        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            // Toast.makeText(this, "landscape", Toast.LENGTH_SHORT).show();
+        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
+            //Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show();
         }
     }
 }

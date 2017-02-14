@@ -21,7 +21,11 @@ public class Symtomps extends AppCompatActivity {
         setContentView(R.layout.activity_pre_healthlist);
 
 
-        List = new String[] {"Are you wondering if you might be pregnant?" +
+        List = new String[] {
+                "Introduction"+
+                        "\n"+
+                        "\n"+
+                        "\n"+"Are you wondering if you might be pregnant?" +
                 "\n"+
                 " The only way to know for sure is by taking a pregnancy test.\n" +
                 "\n" +
@@ -36,7 +40,7 @@ public class Symtomps extends AppCompatActivity {
                 "has the same symptoms or even the same symptoms" +
                 " from one pregnancy to the next.",
 
-                "1.Spotting and Cramping."+
+                "1.Spotting and Cramping"+
                         "\n"+
                         "\n"+
                         "\n"+
@@ -69,7 +73,7 @@ public class Symtomps extends AppCompatActivity {
                         "\n"+
                         "\n",
 
-                "2.Breast Changes."+
+                "2.Breast Changes"+
                         "\n"+
                         "\n"+
                         "\n"+
@@ -107,7 +111,7 @@ public class Symtomps extends AppCompatActivity {
                         "Eating foods that are rich in protein " +
                         "and iron can help offset it.",
 
-                "4.Nausea (Morning Sickness)."+
+                "4.Nausea (Morning Sickness)"+
                         "\n"+
                         "\n"+
                         "\n"+
@@ -122,7 +126,7 @@ public class Symtomps extends AppCompatActivity {
                         "day but most commonly in the morning.\n" +
                         "\n",
 
-                "5.Missed Period."+
+                "5.Missed Period"+
                         "\n"+
                         "\n"+
                         "\n"+
@@ -148,7 +152,7 @@ public class Symtomps extends AppCompatActivity {
                         "\n"+
                         "\n",
 
-                "6.Frequent Urination."+
+                "6.Frequent Urination"+
                         "\n"+
                         "\n"+
                         "\n"+
@@ -160,7 +164,7 @@ public class Symtomps extends AppCompatActivity {
                         " most likely due to hormonal levels.",
 
 
-                "7.Constipation."+
+                "7.Constipation"+
                         "\n"+
                         "\n"+
                         "\n"+

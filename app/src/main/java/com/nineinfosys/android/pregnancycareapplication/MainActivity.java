@@ -1,9 +1,12 @@
 package com.nineinfosys.android.pregnancycareapplication;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.AlertDialog;
+import android.view.KeyEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,6 +19,7 @@ import android.view.MenuItem;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.nineinfosys.android.pregnancycareapplication.DosAndDonts.DosAndDontsActivity;
 import com.nineinfosys.android.pregnancycareapplication.Excersise.ExcersizeActivity;
 import com.nineinfosys.android.pregnancycareapplication.Generaltips.Tips;
 import com.nineinfosys.android.pregnancycareapplication.Tips.TipsForPregnancy;
@@ -132,6 +136,40 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        switch(keyCode){
+            case KeyEvent.KEYCODE_BACK:
+                /*Intent i=new Intent(this,Splash_Screen.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity;*/
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+                alertDialogBuilder.setMessage("Are you sure you want to close App?");
+                alertDialogBuilder.setPositiveButton("Yes",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+
+                                finish();
+                            }
+                        });
+
+                alertDialogBuilder.setNegativeButton("No",
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface arg0, int arg1) {
+
+                            }
+                        });
+
+                //Showing the alert dialog
+                AlertDialog alertDialog = alertDialogBuilder.create();
+                alertDialog.show();
+                return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -159,7 +197,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(MainActivity.this, ExcersizeActivity.class));
 
         } else if (id == R.id.nav_does) {
-
+            startActivity(new Intent(MainActivity.this, DosAndDontsActivity.class));
         } else if (id == R.id.nav_share) {
 
         }

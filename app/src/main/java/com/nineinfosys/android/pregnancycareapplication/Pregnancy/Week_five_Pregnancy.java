@@ -23,7 +23,7 @@ public class Week_five_Pregnancy extends AppCompatActivity implements View.OnCli
     String List[]=new String[]{"   Week 5\n" +
             "\n" +
             "\n"+
-            "\n" +
+
 
 
             "Baby: " +

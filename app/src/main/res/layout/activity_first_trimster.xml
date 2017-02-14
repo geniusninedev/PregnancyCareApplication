@@ -5,8 +5,7 @@
     android:id="@+id/activity_first_trimster"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    tools:context="com.nineinfosys.android.simpleproject.Excersise.TrimsterOne.FirstTrimster">
+>
 
     <ListView
         android:layout_width="match_parent"
@@ -15,15 +14,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:id="@+id/ListOfExcercise"
-        android:background="@drawable/warmupexcercise"/>
+        android:background="@drawable/simple"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:textColor="@android:color/black"
-        android:paddingLeft="5dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:id="@+id/textViewlistexcercise" />
+
 </RelativeLayout>

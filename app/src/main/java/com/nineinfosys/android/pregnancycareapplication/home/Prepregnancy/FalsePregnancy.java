@@ -88,7 +88,7 @@ public class FalsePregnancy extends AppCompatActivity{
 
 
 
-                "Tests for False Pregnancy"+
+                "Tests For False Pregnancy"+
                         "\n"+
                         "\n"+
                         "\n"+

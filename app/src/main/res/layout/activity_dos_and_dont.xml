@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/simple">
+    android:background="@drawable/simple"
+  >
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -14,12 +15,11 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:tabMode="fixed"
             app:tabIndicatorColor="@android:color/white"
             app:tabIndicatorHeight="4dp"
-            app:tabGravity="fill"
-            android:fadingEdge="horizontal|vertical"
-            android:fadingEdgeLength="2dp" />
+
+            app:tabMode="fixed"
+            app:tabGravity="fill"/>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager

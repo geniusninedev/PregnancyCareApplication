@@ -8,7 +8,7 @@
         android:layout_height="match_parent"
         android:id="@+id/weekbyweekPregnancy"
         android:divider="@drawable/divider"
-        android:dividerHeight="20dp"
+
         android:layout_marginLeft="10dp"
         android:layout_marginTop="20dp"/>
 </LinearLayout>

@@ -5,8 +5,9 @@
 
   <ImageView
       android:id="@+id/imageView1"
-      android:layout_width="70dp"
-      android:layout_height="70dp"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+
       android:layout_marginLeft="5dp"
       android:src="@drawable/abc_btn_check_material"
       android:layout_alignParentTop="true" />
@@ -14,11 +15,13 @@
   <TextView
       android:id="@+id/textView1"
       android:layout_width="wrap_content"
-      android:layout_height="70dp"
+      android:layout_height="wrap_content"
       android:layout_alignParentTop="true"
       android:layout_centerHorizontal="true"
-      android:gravity="center"
+    android:paddingTop="38dp"
+      android:paddingBottom="20dp"
       android:text="Large Text"
+      android:textSize="18dp"
       android:layout_marginLeft="8dp"
       android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
