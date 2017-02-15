@@ -23,7 +23,7 @@ public class Clothes extends AppCompatActivity implements View.OnClickListener,V
             "\n"+
             "\n" +
 
-            "Maternity Clothing Styles: " +
+            "Maternity Clothing Styles" +
             "\n"+
             "\n"+
             "It has become a popular trend to wear fine quality" +
@@ -51,7 +51,7 @@ public class Clothes extends AppCompatActivity implements View.OnClickListener,V
             "\n"+
             "\n\n",
 
-            "1. Maternity Wear on Your Budget:" +
+            "Maternity Wear on Your Budget" +
                     "\n" +
                     "\n"+
                     "\n" +
@@ -79,12 +79,12 @@ public class Clothes extends AppCompatActivity implements View.OnClickListener,V
                     "\n"+
                     "\n\n\n" ,
 
-            "2. Comfort Counts the Most:" +
+            "Comfort Counts the Most" +
                     "\n" +
                     "\n"+
                     "\n" +
 
-                    "  Fashion does play an important role when it comes " +
+                    "Fashion does play an important role when it comes " +
                     "to choosing clothes at the time of pregnancy, but keep " +
                     "in mind that you and your baby’s health comes first. " +
                     "Maternity pants at the waistline should be loose and " +
@@ -96,12 +96,12 @@ public class Clothes extends AppCompatActivity implements View.OnClickListener,V
                     "\n"+
                     "\n" ,
 
-            "3. Make it Size Wise:" +
+            "Make it Size Wise" +
                     "\n" +
                     "\n"+
                     "\n" +
 
-                    " Maternity style clothes have added space for " +
+                    "Maternity style clothes have added space for " +
                     "the belly and bust, as these body parts grow " +
                     "in the later months. Still, some pregnant women" +
                     " may prefer to stick to non-maternity. In that case," +
@@ -114,12 +114,12 @@ public class Clothes extends AppCompatActivity implements View.OnClickListener,V
                     "\n"+
                     "\n\n\n" ,
 
-            "4. Maternity Clothing for Professionals:" +
+            "Maternity Clothing for Professionals" +
                     "\n" +
                     "\n"+
                     "\n" +
 
-                    " Pregnancy for regular professionals demands" +
+                    "Pregnancy for regular professionals demands" +
                     " more care and comfortable dressing, without " +
                     "breaching the standard professional dress " +
                     "codes, for one’s entire pregnant phase. Here " +
@@ -147,12 +147,12 @@ public class Clothes extends AppCompatActivity implements View.OnClickListener,V
 
 
 
-            "5. Exercise Clothing:" +
+            "Exercise Clothing" +
                     "\n" +
                     "\n"+
                     "\n\n\n" +
 
-                    " Exercising during pregnancy is highly " +
+                    "Exercising during pregnancy is highly " +
                     "recommended, provided it is approved by" +
                     " your doctor. Exercise makes sure both " +
                     "you and your baby are in good health. " +
@@ -179,7 +179,7 @@ public class Clothes extends AppCompatActivity implements View.OnClickListener,V
                     "\n\n\n" ,
 
 
-            "6. The Inner Secret: “Bras”:" +
+            "The Inner Secret: “Bras”" +
                     "\n" +
                     "\n"+
                     "\n" +

@@ -24,14 +24,12 @@ public class Week_five_Pregnancy extends AppCompatActivity implements View.OnCli
             "\n" +
             "\n"+
 
-
-
             "Baby: " +
             "\n"+
             "\n"+
 
             "Your baby is still tiny, but its heart," +
-            " brain, spinal cord, muscle, and bones are " +
+            "brain, spinal cord, muscle, and bones are " +
             "beginning to develop. The placenta, which " +
             "nourishes your baby, and the amniotic sac, " +
             "which provides a warm and safe environment " +
@@ -128,7 +126,8 @@ public class Week_five_Pregnancy extends AppCompatActivity implements View.OnCli
                     " will grow into hands and feet. Many parts " +
                     "continue to develop: heart, lungs, intestines" +
                     ", appendix, brain, spinal cord, nostrils, mouth, and eyes"+
-
+                    "\n"+
+                    "\n"+
                     "Mom-to-be: " +
                     "\n"+
                     "\n"+
@@ -171,6 +170,8 @@ public class Week_five_Pregnancy extends AppCompatActivity implements View.OnCli
                     "for growth. Eyelid folds and ears are forming." +
                     " Your baby develops little webbed fingers " +
                     "and toes and can even swim around in your womb."+
+                    "\n"+
+                    "\n"+
 
                     "Mom-to-be: " +
                     "\n"+

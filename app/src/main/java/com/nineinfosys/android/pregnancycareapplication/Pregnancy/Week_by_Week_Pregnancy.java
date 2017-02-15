@@ -21,7 +21,7 @@ public class Week_by_Week_Pregnancy extends AppCompatActivity implements View.On
     String List[]=new String[]{"   Weeks 1 and 2" +
             "\n"+
             "\n" +
-
+            "\n" +
             "Baby: " +
             "\n"+
             "\n"+
@@ -67,7 +67,7 @@ public class Week_by_Week_Pregnancy extends AppCompatActivity implements View.On
             "Week 3"+
                     "\n"+
                     "\n" +
-
+                    "\n" +
 
             "Baby: " +
                     "\n"+
@@ -114,8 +114,7 @@ public class Week_by_Week_Pregnancy extends AppCompatActivity implements View.On
                     "\n"+
                     "\n" +
 
-
-
+                    "\n" +
                     "Baby:" +
                     "\n"+
                     "\n"+

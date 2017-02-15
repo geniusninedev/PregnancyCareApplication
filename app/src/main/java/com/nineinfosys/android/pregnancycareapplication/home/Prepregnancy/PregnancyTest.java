@@ -51,7 +51,7 @@ public class PregnancyTest extends AppCompatActivity {
                 "Urine Tests:" +
                       "\n"+
                       "\n"+
-                      "can be done at home or in a doctor's office. " +
+                      "Can be done at home or in a doctor's office. " +
                       "Many women first choose a home pregnancy " +
                       "test to take about a week after a missed period." +
                       " Home pregnancy tests are private and convenient." +
@@ -65,7 +65,7 @@ public class PregnancyTest extends AppCompatActivity {
                 "Blood Tests:" +
                       "\n"+
                       "\n"+
-                        "are done at your doctor's office, but are used " +
+                        "Are done at your doctor's office, but are used " +
                       "less often than urine tests. These tests can detect " +
                       "pregnancy earlier than a home pregnancy test, or about" +
                       " six to eight days after ovulation. But with these tests," +
@@ -90,7 +90,7 @@ public class PregnancyTest extends AppCompatActivity {
                         "\n"+
                         "\n"+
 
-                        "you are pregnant. This is true no matter how " +
+                        "You are pregnant. This is true no matter how " +
                         "faint the line, color, or sign is. If you " +
                         "get a positive result, you may want to call" +
                         " your doctor to talk about what comes next." +
@@ -110,7 +110,7 @@ public class PregnancyTest extends AppCompatActivity {
                         "\n"+
                         "\n"+
                         "\n"+
-                        " you are likely not pregnant. However, you may still be pregnant if:" +
+                        "You are likely not pregnant. However, you may still be pregnant if:" +
                         "The test is past its expiration date." +
                         "You took the test the wrong way." +
                         "You tested too soon." +

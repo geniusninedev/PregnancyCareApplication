@@ -45,10 +45,10 @@ public class Week_nine_Pregnancy extends AppCompatActivity implements View.OnCli
             " however, your pregnancy still won't be noticeable " +
             "to others. You shouldn't have gained much weight yet," +
             " especially if you're having food aversions, cravings," +
-            " heartburn, indigestion, nausea, or bloating.\n" +
+            " heartburn, indigestion, nausea, or bloating." +
             "\n" +
             "\n"+
-            "\n"+
+
             "Tip for the Week: " +
             "\n"+
             "\n"+
@@ -76,7 +76,7 @@ public class Week_nine_Pregnancy extends AppCompatActivity implements View.OnCli
                     "\n"+
                     "\n"+
 
-                    "Mom-to-be: " +
+                    "Mom-to-be:" +
                     "\n"+
                     "\n"+
                     "Once the size of your fist, your uterus is " +
@@ -125,7 +125,7 @@ public class Week_nine_Pregnancy extends AppCompatActivity implements View.OnCli
                     "\n"+
                     "" +
                     "Pregnancy hormones show their good and bad effects." +
-                    " You may notice that your hair, fingernails, " +
+                    "You may notice that your hair, fingernails, " +
                     "and toenails are growing faster. But you may " +
                     "also notice oily skin and acne."+
                     "\n"+

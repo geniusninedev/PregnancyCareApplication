@@ -62,7 +62,7 @@ public class Excercise extends AppCompatActivity implements View.OnClickListener
                     "\n"+
                     "\n" +
 
-                    "  Want to go a little faster? Experienced runners " +
+                    "Want to go a little faster? Experienced runners " +
                     "can stay on track during pregnancy. Just stick " +
                     "to level terrain (or a treadmill or an elliptical machine)" +
                     " and never overdo it (loose ligaments and joints" +
@@ -94,7 +94,7 @@ public class Excercise extends AppCompatActivity implements View.OnClickListener
                     "\n"+
                     "\n" +
 
-                    " Prenatal yoga is another ideal workout " +
+                    "Prenatal yoga is another ideal workout " +
                     "for the mama-to-be: It encourages relaxation, " +
                     "flexibility, focus and deep breathing " +
                     "all great preparation for the marathon of birth. " +
@@ -116,7 +116,7 @@ public class Excercise extends AppCompatActivity implements View.OnClickListener
                     "\n"+
                     "\n" +
 
-                    " A wonderful way to break a sweat without putting " +
+                    "A wonderful way to break a sweat without putting " +
                     "pressure on your ankle and knee joints, indoor " +
                     "cycling lets you pedal at your own pace without " +
                     "the risk of falling. Try transitioning your " +
@@ -137,7 +137,7 @@ public class Excercise extends AppCompatActivity implements View.OnClickListener
                     "\n"+
                     "\n" +
 
-                    " A pregnancy-appropriate Pilates routine focuses" +
+                    "A pregnancy-appropriate Pilates routine focuses" +
                     " mainly on strengthening your core and " +
                     "lengthening your muscles. And all that " +
                     "core strengthening will help ease backaches " +

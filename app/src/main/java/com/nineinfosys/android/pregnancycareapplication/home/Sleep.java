@@ -124,7 +124,7 @@ public class Sleep extends AppCompatActivity implements View.OnClickListener,Vie
                     "\n\n\n" ,
 
 
-            "Reduce stress and anxiety." +
+            "Reduce Stress and Anxiety." +
                     "\n" +
                     "\n"+
                     "\n" +
@@ -145,7 +145,7 @@ public class Sleep extends AppCompatActivity implements View.OnClickListener,Vie
 
 
 
-            "Get into position" +
+            "Get Into Position" +
                     "\n" +
                     "\n"+
                     "\n" +
@@ -158,7 +158,7 @@ public class Sleep extends AppCompatActivity implements View.OnClickListener,Vie
                     "\n"+
                     "\n\n\n",
 
-            "Nap during the day" +
+            "Nap During the Day" +
                     "\n" +
                     "\n"+
                     "\n" +
