@@ -25,6 +25,7 @@ import com.nineinfosys.android.pregnancycareapplication.Generaltips.Tips;
 import com.nineinfosys.android.pregnancycareapplication.Tips.TipsForPregnancy;
 import com.nineinfosys.android.pregnancycareapplication.home.Clothes;
 import com.nineinfosys.android.pregnancycareapplication.home.Excercise;
+import com.nineinfosys.android.pregnancycareapplication.home.HealthyDiet;
 import com.nineinfosys.android.pregnancycareapplication.home.Introduction;
 import com.nineinfosys.android.pregnancycareapplication.home.PrePregnancy;
 import com.nineinfosys.android.pregnancycareapplication.home.Pregnancy;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity
             "Pre-Pregnancy ",
             "Pregnancy",
             "Excercise In Pregnancy",
+            "Healthy Diet In Pregnancy",
             "Right Clothes To Wear During Pregnancy",
             "The Basics Of Good Sleep During Pregnancy"
 
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity
             R.drawable.pre,
             R.drawable.carr,
             R.drawable.exercise,
+            R.drawable.fruit,
             R.drawable.rightwear,
             R.drawable.sleep,
 
@@ -86,12 +89,19 @@ public class MainActivity extends AppCompatActivity
                 if (position == 3) {
 
                     startActivity(new Intent(MainActivity.this,Excercise.class));
+
                 }
                 if (position == 4) {
 
+                    startActivity(new Intent(MainActivity.this,HealthyDiet.class));
+
+                }
+
+                if (position == 5) {
+
                     startActivity(new Intent(MainActivity.this,Clothes.class));
                 }
-                if (position == 5) {
+                if (position == 6) {
 
                     startActivity(new Intent(MainActivity.this,Sleep.class));
                 }
